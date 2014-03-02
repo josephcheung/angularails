@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><% content_for?(:title) ? yield(:title) : "Angularails" %></title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    "application", media: "all" %>
+    <%= javascript_include_tag "application" %>
+  </head>
+  <body>
+  <div class="navbar navbar-inverse">
+    <div class="container">
+      <a href="#" class="navbar-brand">Angularails</a>
+    </div>
+  </div>
+  <div class="container">
+    <%= yield %>
+  </div>
+  </body>
+</html>
